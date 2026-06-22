@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anthony Boring — IT Portfolio</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600;700&display=swap');
+
+  :root {
+    --bg: #F7F8FA;
+    --surface: #FFFFFF;
+    --navy: #0F2144;
+    --navy-mid: #1A3561;
+    --blue: #2463EB;
+    --blue-light: #EEF3FE;
+    --text: #1C2333;
+    --muted: #6B7A99;
+    --border: #DDE3F0;
+    --mono-text: #79C0FF;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    min-height: 100vh;
+  }
+
+  header {
+    background: var(--navy);
+    padding: 64px 32px 56px;
+    text-align: center;
+  }
+
+  .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: var(--navy-mid);
+    border: 2px solid rgba(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--mono-text);
+    margin: 0 auto 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+  }
+
+  .title-line {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: var(--mono-text);
+    letter-spacing: 0.06em;
+    margin-bottom: 20px;
+  }
+
+  .bio {
+    color: #A8B8D8;
+    font-size: 15px;
+    max-width: 520px;
+    margin: 0 auto 28px;
+  }
+
+  .contact-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .contact-row a {
+    color: #7A90B8;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    transition: color 0.15s;
+  }
+
+  .contact-row a:hover { color: var(--mono-text); }
+
+  .certs-bar {
+    background: var(--navy-mid);
+    padding: 14px 32px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .cert {
+    background: rgba(255,255,255,0.08);
+    color: #C5D5F0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    padding: 5px 12px;
+    border-radius: 3px;
+    letter-spacing: 0.05em;
+  }
+
+  .container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 56px 32px 80px;
+  }
+
+  .section-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 6px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+  }
+
+  .project-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px;
+    text-decoration: none;
+    display: block;
+    max-width: 420px;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+
+  .project-card:hover {
+    border-color: var(--blue);
+    box-shadow: 0 4px 16px rgba(36,99,235,0.08);
+  }
+
+  .card-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--blue-light);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    font-size: 18px;
+  }
+
+  .card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .card-desc {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+
+  .card-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+  }
+
+  .card-tag {
+    background: var(--blue-light);
+    color: var(--blue);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 3px;
+    letter-spacing: 0.04em;
+  }
+
+  .arrow {
+    color: var(--blue);
+    font-size: 13px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="avatar">AB</div>
+  <h1>Anthony Boring</h1>
+  <p class="bio">CompTIA A+, Network+, and Security+ certified IT professional with hands-on experience in Windows Server, Active Directory, networking, Linux, and penetration testing labs.</p>
+  <div class="contact-row">
+    <a href="https://github.com/1AJB" target="_blank">GitHub ↗</a>
+    <a href="https://tryhackme.com/p/Anewagent" target="_blank">TryHackMe ↗</a>
+  </div>
+</header>
+
+<div class="certs-bar">
+  <span class="cert">CompTIA A+</span>
+  <span class="cert">CompTIA Network+</span>
+  <span class="cert">CompTIA Security+</span>
+</div>
+
+<div class="container">
+  <div class="section-label">Projects</div>
+  <h2>Lab Write-Ups</h2>
+
+  <a href="AD-Homelab/index.html" class="project-card">
+    <div class="card-icon">🖥️</div>
+    <div class="card-title">Active Directory Home Lab</div>
+    <div class="card-desc">Built a full Windows Server 2022 domain environment in VirtualBox — DHCP, NAT, 100+ users via PowerShell, and a Windows 10 client joined to the domain.</div>
+    <div class="card-tags">
+      <span class="card-tag">Active Directory</span>
+      <span class="card-tag">Windows Server</span>
+      <span class="card-tag">DHCP</span>
+      <span class="card-tag">NAT</span>
+      <span class="card-tag">PowerShell</span>
+    </div>
+    <div class="arrow">Read write-up →</div>
+  </a>
+</div>
+
+</body>
+</html>
